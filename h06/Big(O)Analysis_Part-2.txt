@@ -1,0 +1,97 @@
+Andy Nguyen, ICS 211, Section 1 TA: Tyler Anderson
+
+Big O Analysis
+
+
+Objective: give best/worst/average case for the three methods of 
+Add(1 parameter) 
+Add(2 parameter)
+Remove(1 parameter)  
+
+If size() returns nothing
+
+Add Method (2 parameter) Best Case: O(1) 
+Method size() returns as an non-existant index. Therefore the Add method wouldn't run...
+... and the program cannot reach the while method
+ making it constant time (Technically)
+
+Add Method (2 parameter) Average Case: O(n)
+Method iterate(LinkedNode<E> node, int index) contains for loop with unknown variables making it O(n)
+Average case is when user enters negative index, passing the condition check
+(Though ultimately, I don't think whether or not a condition is passed for double add method)
+
+Add Method (2 parameter) Worst Case: O(n)
+Method iterate(LinkedNode<E> node, int index) contains for loop with unknown variables making it O(n)
+Worst case is when user enters positive index, failing the condition check, and rerouting the code into the else for loop
+
+
+Add Method (1 parameter) Best Case: O(1)
+Method possesses no for loop to take linear time
+
+Add Method (1 parameter) Average Case: O(1)
+Method possesses no for loop to take linear time
+
+Add Method (1 parameter) Worst Case: O(1)
+Method possesses no for loop to take linear time
+
+
+Remove Method Best Case: O(1)
+Method size() returns as an non-existant index. Therefore the Remove method wouldn't run...
+... and the program cannot reach the while method
+ making it constant time (Technically)
+
+Remove Method Average Case: O(n)
+Average case is when the if(size() == 1) passes
+Although size() has to be one in order for the condition to pass, time complexity would be linear
+As size() still has to run a while loop, with conditions of unknown variables
+
+Remove Method Worst Case: O(n)
+Worst case is when if(size() == 1) fails
+After if(size() == 1) fails, the program executes a check statements of unknown variables
+if the check fails, iterate method would be called, making time complexity linear
+
+If size() returns a number
+
+Add Method (2 parameter) Best Case: O(1) 
+Method size() returns as a number. Which means that Double Add Method runs and condition if (tail == null) failed
+Meaning that the program can reach the while method
+It is linear time because size() contains a while loop with unknown variables
+
+Add Method (2 parameter) Average Case: O(n)
+Method iterate(LinkedNode<E> node, int index) contains for loop with unknown variables making it O(n)
+Average case is when user enters negative index, passing the condition check
+(Though ultimately, I don't think whether or not a condition is passed for double add method)
+
+Add Method (2 parameter) Worst Case: O(n)
+Method iterate(LinkedNode<E> node, int index) contains for loop with unknown variables making it O(n)
+Worst case is when user enters positive index, failing the condition check, and rerouting the code into the else for loop
+
+
+Add Method (1 parameter) Best Case: O(1)
+Method possesses no for loop to take linear time
+
+Add Method (1 parameter) Average Case: O(1)
+Method possesses no for loop to take linear time
+
+Add Method (1 parameter) Worst Case: O(1)
+Method possesses no for loop to take linear time
+
+
+Remove Method Best Case: O(1)
+Method size() returns as a number. Which means that Remove Method runs and condition if (tail == null) failed
+Meaning that the program can reach the while method
+It is linear time because size() contains a while loop with unknown variables
+
+Remove Method Average Case: O(n)
+Average case is when the if(size() == 1) passes
+Although size() has to be one in order for the condition to pass, time complexity would be linear
+As size() still has to run a while loop, with conditions of unknown variables
+
+Remove Method Worst Case: O(n)
+Worst case is when if(size() == 1) fails
+After if(size() == 1) fails, the program executes a check statements of unknown variables
+if the check fails, iterate method would be called, making time complexity linear
+
+
+PS, What a Pain
+    - Andy Nguyen
